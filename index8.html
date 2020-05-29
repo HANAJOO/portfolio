@@ -6,7 +6,8 @@
     <title>hana's portfolio</title>
     
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style8.css">
+    <link rel="stylesheet" href="assets/css/style5555.css">
+    <link rel="shorcut icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
 </head>
@@ -94,12 +95,12 @@ alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 
                         <img src="assets/img/me22.jpg" alt="">
                         <div class="img_text">
                             <div class="img_text_desc">
-                                <h3>My <span>Favorit</span> </h3>
+                                <h3>Another <span>Experience</span></h3>
                                 <p>
-                                    여행<br>
-                                    산책<br>
-                                    포유류 동물<br>
-                                    계획표에 밑줄 긋기<br>
+                                    중국에서 한식레스토랑 창업<br>
+                                    테일러메이드 물류관리<br>
+                                    중국인 대상 한국어 교사<br>
+                                    주시안총영사관 통역자원봉사<br>
                                 </p>
                             </div>
                         </div>
@@ -111,13 +112,12 @@ alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 
                         <img src="assets/img/me3.jpg" alt="">
                         <div class="img_text">
                             <div class="img_text_desc">
-                                <h3>My <span>Favorit</span> </h3>
-                                <p>
-                                    여행<br>
-                                    산책<br>
-                                    포유류 동물<br>
-                                    계획표에 밑줄 긋기<br>
-                                </p>
+                                <h3>My <span>Hobby</span> </h3>
+                                    <p>
+                                        스도쿠<br>
+                                        인터넷 서핑<br>
+                                        피아노 & 통기타<br>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -602,20 +602,57 @@ alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 
             </div>
             <!-- //Vsection9 > Vsec13 : 애플뮤직 -->
         </div>
+
         <div id="Vsection10">
+            <div class="Vsec14">
+                <div class="text_wrap">
+                    <div class="text">
+                        <p>프론트엔드로 한 걸음</p>
+                        <h2>
+                            <span
+                            data-15000="transform: translateX(0px)"
+                            data-20000="transform: translateX(-600px)"
+                            >react</span>
+                            <span>Javascript</span>
+                            <span
+                            data-15200="transform: translateX(0px)"
+                            data-20000="transform: translateX(400px)"
+                            >GAME</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="Vsec18">
+                <div class="game_box">
+                    <div class="game_box_img">업데이트중...</div>
+                </div>
+                <div class="game_box">
+                    <a class="game_box_img" href="#" onClick="window.open ('http://wnhana53.dothome.co.kr/js_game/tictackto/', 'JS GAME TIC TACK TO', 'location=0, top=20, left=50, width=1400, height=800');return false;"></a>
+                </div>
+                <div class="game_box">
+                    <div class="game_box_img">업데이트중...</div>
+                </div>
+                <div class="game_box">
+                    <div class="game_box_img">업데이트중...</div>
+                </div>
+            </div>
+        </div>
+        <!-- //Vsection : 10 : JS game -->
+
+        <div id="Vsection11">
             <div class="Vsec14">
                 <div class="text_wrap">
                     <div class="text">
                         <p>제가 더 궁금해지셨다면</p>
                         <h2>
                             <span
-                            data-17500="transform: translateX(0px)"
-                            data-19100="transform: translateX(-400px)"
+                            data-19000="transform: translateX(0px)"
+                            data-22000="transform: translateX(-500px)"
                             >get in</span>
                             <span>touch</span>
                             <span
-                            data-17500="transform: translateX(0px)"
-                            data-19100="transform: translateX(400px)"
+                            data-19000="transform: translateX(0px)"
+                            data-22000="transform: translateX(500px)"
                             >with me</span>
                         </h2>
                     </div>
@@ -625,8 +662,8 @@ alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 
             <div class="Vsec15">
                 <div class="img_wrap">
                     <div class="img"
-                        data-18300="transform: translateX(0px)"
-                        data-19800="transform: translateX(400px)"
+                        data-20500="transform: translateX(0px)"
+                        data-22000="transform: translateX(400px)"
                     ></div>
                 </div> 
             </div>
@@ -697,8 +734,82 @@ alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 
     <script src="assets/js/easypiechart.min.js"></script>
     <script src="assets/js/skrollr.min.js"></script>
     <script src="https://use.fontawesome.com/66abdfe1f9.js"></script>
-    <script src="assets/js/custom3.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        let lastScrollTop = 0;                      //현재 스크롤 값(제일 마지막 스크롤 값)
+        let roadLength = $("#Vcontents").width();    //전체 가로값
+//        $("body").css("height", roadLength);        //섹션 전체 가로값을 body에 높이 값에 할당
+        $(window).scroll(function(){
+            let wScroll = $(window).scrollTop();
+            let wWidth = $(window).width();
+            let wHeight = $(window).height();
+            let dHeight = $("body").height() - wHeight;
+            let wRoad = roadLength - wWidth;
+            let step = wRoad/dHeight;
+            let goLeft = wScroll * step;
+            
+            $(".scroll").text(wScroll)
+            $("#Vcontents").css({ "transform":"translateX(-"+goLeft+"px)"});
+        //
+            
+//            if( wScroll >= $(".sec7").offset().top){
+//                $(".sec7 .text h3").addClass(".effect");
+//            }
+        });
         
+        //chart pie counter
+        function counter(){
+            if ($('.skill .count').size()) {
+                $c = $('.skill .count');
+
+                $c.each(function () {
+                    var $this = $(this);
+                    $this.data('target', parseInt($this.html()));
+                    $this.data('counted', false);
+                    $this.html('0');
+                });
+
+                $(window).on('scroll', function () {
+                    var speed = 5000;
+
+                    $c.each(function (i) {
+                        var $t = $(this);
+                        if (!$t.data('counted') && $(window).scrollTop() + $(window).height() >= $(".Vsec6").offset().top) {
+
+                            $t.data('counted', true);
+
+                            $t.animate({
+                                dummy: 1
+                            }, {
+                                duration: speed,
+                                step: function (now) {
+                                    var $this = $(this);
+                                    var val = Math.round($this.data('target') * now);
+                                    $this.html(val);
+                                }
+                            });
+
+                            // easy pie
+                            $('.chart').easyPieChart({
+                                barColor: '#000',
+                                trackColor: '#fff',
+                                scaleColor: '#696969',
+                                scaleLength: 5,
+                                lineWidth: 5,
+                                size: 250,
+                                lineCap: 'round',
+                                animate: { duration: speed, enabled: true }
+                            });
+                        }
+                    });
+                }).triggerHandler('scroll');
+            }
+        }
+        counter();
     </script>
 </body>
 </html>
